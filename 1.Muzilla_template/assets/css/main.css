@@ -59,7 +59,7 @@ Table of contents
   --tc-body-line-height: 1.5;
   --tc-heading-line-height: 1.2;
   --tc-theme-primary: #e3ff04;
-  --tc-theme-b_text: #999999;
+  --tc-theme-b_text: #e9e9e9;
   --tc-theme-b_text2: #565656;
   --tc-system-white: #ffffff;
   --tc-system-black-1: #530572;
@@ -3212,7 +3212,7 @@ Preloader
 
 .accordion .card {
   transition: all 0.3s ease-in-out;
-  background: #282828;
+  background: #b803ff00;
 }
 .accordion .card.active {
   background-color: var(--tc-system-black-1);
