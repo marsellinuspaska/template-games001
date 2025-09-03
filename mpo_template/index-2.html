@@ -32,7 +32,7 @@
     </div>
 
     <!--Preloader-end -->
-    <!-- Modal -->
+    <!-- Login Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -58,7 +58,7 @@
                         <label class="form-label">Password</label>
                         <div class="input-group">
                                 <form class="input-group" data-aos="zoom-in">
-                                    <input type="text" id="input-password" class="form-control border-secondary" placeholder="Input password" aria-label="Password" />
+                                    <input type="password" id="input-password" class="form-control border-secondary" placeholder="Input password" aria-label="Password" />
                                 </form>
                         </div>
                         </div>
@@ -68,7 +68,7 @@
                             <input type="checkbox" class="form-check-input" id="remember">
                             <label class="form-check-label" for="remember">Remember me</label>
                         </div>
-                        <a href="#" class="text-decoration-none">Forgot password?</a>
+                        <a href="forgot-password.html" class="text-decoration-none">Forgot password?</a>
                         </div>
 
                         <button type="submit" class="button btn btn-game w-100 justify-content-center">Login</button>
@@ -79,10 +79,10 @@
 
                         <div class="social-login">
                         <button type="button" class="btn btn-social">
-                            <i class="fab fa-google"></i>Google
+                            <i class="fa-google"></i>Google
                             </button>
                         <button type="button" class="btn btn-social">
-                            <i class="fab fa-facebook-f"></i>Facebook
+                            <i class="fa-facebook-f"></i>Facebook
                             </button>
                         </div>
 
@@ -94,11 +94,18 @@
             </div>
         </div>
     </div>
+    <!-- Forgot Password Modal -->
+
     <!-- Navbar -->
     <header>
         <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
             <div class="btn-spinwheel">
                 <img src="assets/imgs/floating-images/spin-wheel.gif" width="90px" height="90px" alt="Spinwheel">
+            </div>
+        </a>
+        <a href="https://livechat.design/">
+            <div class="btn-livechat">
+                <img src="assets/imgs/floating-images/live-chat.gif" width="90px" height="90px" alt="Live Chat">
             </div>
         </a>
         <nav class="navbar navbar-expand-lg navbar-light w-100 z-3 p-0">
@@ -166,7 +173,7 @@
                     <span class="burger-icon-bottom"></span> -->
                 </div>
                 
-                <a href="#" class="btn btn-primary d-none d-md-block" data-bs-toggle="modal" data-bs-target="#loginModal"> Login Now </a>
+                <a href="#" class="btn btn-primary d-none d-md-block" data-bs-toggle="modal" data-bs-target="#loginModal"> Login </a>
                     <a href="#" class="gradient ms-3 burger-icon d-lg-none d-block burger-icon-white">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <circle cx="20" cy="20" r="20" fill="#E3FF04"></circle>
@@ -258,17 +265,16 @@
             <div class="offCanvas__side-info mb-30">
                 <div class="contact-list mb-30">
                     <h4>Office Address</h4>
-                    <p>123/A, Miranda City Likaoli <br> Prikano, Dope</p>
+                    <p> Indonesia</p>
                 </div>
                 <div class="contact-list mb-30">
                     <h4>Phone Number</h4>
-                    <p>+0989 7876 9865 9</p>
-                    <p>+(090) 8765 86543 85</p>
+                    <p>+(62) 000-0000-0000</p>
                 </div>
                 <div class="contact-list mb-30">
                     <h4>Email Address</h4>
-                    <p>info@example.com</p>
-                    <p>example.mail@hum.com</p>
+                    <p>info@asd.com</p>
+                    <p>asd.mail@asd.com</p>
                 </div>
             </div>
             <div class="offCanvas__social-icon mt-30">
@@ -284,7 +290,7 @@
             <div class="mobile-header-wrapper-inner">
                 <div class="mobile-header-logo justify-content-between d-flex align-items-center">
                     <div class="btn-group">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal"> Login Now </button>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal"> Login </button>
                     </div>
                     <div class="burger-icon burger-icon-white border rounded-circle">
                         <span class="burger-icon-top"></span>
@@ -352,6 +358,7 @@
             </div>
         </div>
     </header>
+
     <main>
         <!-- Section-1 -->
         <section class="section-works-1 position-relative pt-160 overflow-hidden">
@@ -363,27 +370,30 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="text-start mt-8">
+                        <div class="text-start mt-2">
                         <div class="bg-transparent mb-3">
                             <form class="input-group" data-aos="zoom-in">
                                 <input type="text" id="input-search" class="input-search-2 height-42 border border-secondary" placeholder="Search" aria-label="Keywords" />
                             </form>
                         </div>
-                            <div class="button-group filter-button-group filter-menu-active">
-                                <!-- <button class="btn filter-btn mb-2 me-2 text-uppercase active" data-filter="*">All Games</button> -->
-                                <button class="btn filter-btn mb-2 me-2 text-uppercase active" data-filter=".Popular">Popular</button>
+                            <div class="button-group filter-btn-swiper filter-menu-active">
+                                <button class="btn filter-btn mb-2 me-2 text-uppercase active" data-filter="*">All Games</button>
+                                <button class="btn filter-btn mb-2 me-2 text-uppercase" data-filter=".Popular">Popular</button>
                                 <button class="btn filter-btn mb-2 me-2 text-uppercase " data-filter=".Slots">Slots</button>
                                 <button class="btn filter-btn mb-2 me-2 text-uppercase " data-filter=".Casino">Casino</button>
                                 <button class="btn filter-btn mb-2 me-2 text-uppercase " data-filter=".Sportsbook">Sportsbook</button>
                                 <button class="btn filter-btn mb-2 me-2 text-uppercase " data-filter=".Lottery">Lottery</button>
                                 <button class="btn filter-btn mb-2 me-2 text-uppercase " data-filter=".Poker">Poker</button>
                                 <button class="btn filter-btn mb-2 me-2 text-uppercase " data-filter=".Arcade">Arcade</button>
+                                <button class="btn filter-btn mb-2 me-2 text-uppercase " data-filter=".New">New</button>
+                                <button class="btn filter-btn mb-2 me-2 text-uppercase " data-filter=".New">New</button>
+                                <button class="btn filter-btn mb-2 me-2 text-uppercase " data-filter=".New">New</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- games -->
-                <div class="row masonary-active mt-8">
+                <div class="row masonary-active mt-3">
                     <div class="grid-sizer"></div>
                     <div class="filter-item col-lg-4 col-md-6 col-sm-12 Popular">
                         <div class="card-work border-bottom border-primary border-4 mb-4">
