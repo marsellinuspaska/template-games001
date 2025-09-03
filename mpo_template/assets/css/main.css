@@ -440,6 +440,7 @@ img {
   background-color: var(--tc-system-black-2) !important;
 }
 
+
 .line-gradient {
   width: 50px;
   height: 1px;
@@ -1995,15 +1996,16 @@ textarea {
   padding-top: 25px;
 }
 .offCanvas__side-info .contact-list h4 {
-  color: var(--tc-theme-heading);
+  color: var(--tc-white);
   font-weight: 700;
   font-size: 18px;
 }
 .offCanvas__side-info .contact-list p {
-  color: var(--tc-theme-b_text2);
+  color: var(--tc-white);
   margin: 0;
   margin-bottom: 2px;
   line-height: 26px;
+  font-size: 14px;
 }
 .offCanvas__social-icon a {
   color: var(--tg-theme-primary);
@@ -2016,7 +2018,7 @@ textarea {
 }
 .offCanvas__overly {
   position: fixed;
-  background: #000;
+  background: #1b1b1b15;
   top: 0;
   left: 0;
   height: 100%;
@@ -2025,11 +2027,16 @@ textarea {
   opacity: 0;
   visibility: hidden;
   transition-duration: 0.3s;
+  backdrop-filter: blur(10px);
 }
 .offCanvas__overly.active {
   opacity: 0.7;
   visibility: visible;
   transition-duration: 0.3s;
+}
+
+.bg-purple {
+  background-color: var(--tc-system-purple-1) !important;
 }
 
 .navbar {
@@ -2563,6 +2570,13 @@ textarea {
 .burger-icon.burger-close > span.burger-icon-bottom {
   bottom: 18px;
   transform: rotate(-45deg);
+}
+
+.btn-spinwheel {
+    z-index: 99;
+    position: fixed;
+    bottom: 85px;
+    left: 20px;
 }
 
 .burger-icon > span::before,
