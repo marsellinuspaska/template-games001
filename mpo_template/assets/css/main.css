@@ -3066,16 +3066,16 @@ Preloader
   height: 56px;
   padding: 10px;
   font-size: 24px;
-  border-radius: 30px;
-  border: 1px solid var(--tc-theme-primary);
+  border-radius: 100px;
+  border: 1px solid var(--tc-system-purple-1);
 }
 .swiper-button-next:hover,
 .swiper-button-next :active,
 .swiper-button-prev:hover,
 .swiper-button-prev :active {
-  border-color: var(--tc-theme-primary);
-  background-color: var(--tc-theme-primary) !important;
-  --swiper-navigation-color: var(--tc-system-black-1);
+  border-color: transparent;
+  background-color: var(--tc-system-white) !important;
+  --swiper-navigation-color: transparent;
 }
 
 .swiper-button-next::after,
@@ -3088,7 +3088,7 @@ Preloader
   height: 4px;
   opacity: 0.1;
   background: var(--tc-system-white);
-  border-radius: 0;
+  border-radius: 100pxs;
 }
 
 .swiper-pagination-bullet-active {
@@ -3096,7 +3096,7 @@ Preloader
   height: 4px;
   opacity: 1;
   background: var(--tc-theme-primary);
-  border-radius: 0;
+  border-radius: 100px;
 }
 
 .hover-up {
@@ -3213,7 +3213,7 @@ Preloader
 }
 .section-blog-list .form-control.height-42,
 .section-blog-details .form-control.height-42 {
-  background: var(--tc-system-black-2) !important;
+  background: var(--tc-system-purple-1) !important;
   min-height: 32px !important;
   height: 42px;
 }
