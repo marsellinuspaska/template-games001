@@ -1509,6 +1509,24 @@ textarea {
   border-color: var(--bs-btn-active-border-color);
 }
 
+.custom-select {
+  border-radius: 50rem;
+  padding: 0.375rem 0.75rem;
+  background-color: var(--bs-bg);
+  background-clip: padding-box;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+// Custom styling for <option> inside .custom-select
+.custom-select option {
+  background-color: var(--tc-system-black-1);
+  color: var(--tc-system-white);
+  font-family: var(--tc-body-font-family);
+  font-size: var(--tc-body-font-size);
+  padding: 0.5rem 1rem;
+}
+
+
 .filter-btn-swiper {
   display: flex;
   overflow-x: auto;
@@ -3265,9 +3283,9 @@ Preloader
   transition: all 0.3s ease-in-out;
 }
 .section-platforms-1 .carouselTicker__item {
-  margin: 0 55px;
+  margin: 0 10px;
   float: left;
-  text-align: center;
+
 }
 
 .section-hero-2 .brand:hover {
