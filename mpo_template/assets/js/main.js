@@ -18,6 +18,31 @@
             $('.offCanvas__info, .offCanvas__overly').removeClass('active');
         });
     }
+
+    // MOBILE MENU & DESKTOP MENU BUTTON
+    function handleDesktopMenuBtnVisibility() {
+        var desktopMenuBtn = document.getElementById('desktopMenuBtn');
+        if (!desktopMenuBtn) return;
+        if (window.innerWidth <= 992) {
+            desktopMenuBtn.style.display = 'none';
+        } else {
+            desktopMenuBtn.style.display = '';
+        }
+    }
+    window.addEventListener('resize', handleDesktopMenuBtnVisibility);
+    document.addEventListener('DOMContentLoaded', handleDesktopMenuBtnVisibility);
+    // Mobile menu button
+    document.getElementById('mobileMenuBtn').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('.mobile-header-active').classList.add('active');
+    });
+    // Desktop menu button
+    document.getElementById('desktopMenuBtn').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('.offCanvas__info').classList.add('active');
+        document.querySelectorAll('.offCanvas__overly').forEach(function(el){ el.classList.add('active'); });
+    });
+    
     // SWIPER PAYMENT METHOD ///
             document.addEventListener('DOMContentLoaded', function () {
                 new Swiper('.slider-payment-method', {

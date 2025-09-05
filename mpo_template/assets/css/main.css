@@ -2499,8 +2499,7 @@ textarea {
   color: var(--tc-system-white);
 }
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li.has-children .menu-expand i {
-  height: 24px;
-  width: 24px;
+  size-adjust: auto;
   display: inline-block;
   opacity: 1;
   background: url(../imgs/template/icons/arrow-right-big.svg) no-repeat center;
