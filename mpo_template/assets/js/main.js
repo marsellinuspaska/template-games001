@@ -32,16 +32,28 @@
     window.addEventListener('resize', handleDesktopMenuBtnVisibility);
     document.addEventListener('DOMContentLoaded', handleDesktopMenuBtnVisibility);
     // Mobile menu button
-    document.getElementById('mobileMenuBtn').addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector('.mobile-header-active').classList.add('active');
-    });
+    var mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            var mobileHeaderActive = document.querySelector('.mobile-header-active');
+            if (mobileHeaderActive) {
+                mobileHeaderActive.classList.add('active');
+            }
+        });
+    }
     // Desktop menu button
-    document.getElementById('desktopMenuBtn').addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector('.offCanvas__info').classList.add('active');
-        document.querySelectorAll('.offCanvas__overly').forEach(function(el){ el.classList.add('active'); });
-    });
+    var desktopMenuBtn = document.getElementById('desktopMenuBtn');
+    if (desktopMenuBtn) {
+        desktopMenuBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            var offCanvasInfo = document.querySelector('.offCanvas__info');
+            if (offCanvasInfo) {
+                offCanvasInfo.classList.add('active');
+            }
+            document.querySelectorAll('.offCanvas__overly').forEach(function(el){ el.classList.add('active'); });
+        });
+    }
     
     // SWIPER PAYMENT METHOD ///
             document.addEventListener('DOMContentLoaded', function () {
