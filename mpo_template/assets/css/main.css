@@ -2,11 +2,16 @@
 
 
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
 :root {
+  --racing-sans-font-family: 'Racing Sans One', cursive;
   --tc-body-font-family: 'Orbitron', sans-serif;
   --tc-heading-font-family: 'Orbitron', sans-serif;
   --tc-display-font-family: 'Orbitron', sans-serif;
   --tc-body-font-size: 16px;
+  --tc-fs-0: 80px;
   --tc-fs-1: 40px;
   --tc-fs-2: 32px;
   --tc-fs-3: 26px;
@@ -47,6 +52,15 @@
   --tc-fw-light: 300;
 }
 
+.elementtext {
+  font-size: 80px;
+}
+
+@media (max-width: 600px) {
+  .elementtext {
+    font-size: 30px;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1196,6 +1210,7 @@ textarea {
     transform: rotate(360deg);
   }
 }
+
 /*img-animation**********************/
 .img-custom-anim-right {
   animation: img-anim-right 1s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
@@ -2004,6 +2019,25 @@ textarea {
   border-right: 0rem;
   border-bottom: 0;
   border-left: 0rem;
+}
+
+.elementtext {
+  font-family: var(--tc-font-family);
+  font-size: var(--tc-ds-1);
+  color: var(--tc-neutral-800);
+  font-weight: 700;
+  line-height: 5rem;
+  position: relative;
+  top: 30px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .elementtext {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    top: 15px;
+  }
 }
 
 .dropstart .dropdown-toggle::before {
@@ -3057,9 +3091,9 @@ Preloader
 
 .swiper-button-next,
 .swiper-button-prev {
-  --swiper-navigation-size: 24px;
+  --swiper-navigation-size: 15px;
   --swiper-navigation-top-offset: 50%;
-  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-sides-offset: 5px;
   --swiper-navigation-color: var(--tc-system-white);
   display: flex;
   width: 56px;

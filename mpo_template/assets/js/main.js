@@ -18,9 +18,27 @@
             $('.offCanvas__info, .offCanvas__overly').removeClass('active');
         });
     }
+    // SWIPER PAYMENT METHOD ///
+            document.addEventListener('DOMContentLoaded', function () {
+                new Swiper('.slider-payment-method', {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                    loop: true,
+                    autoplay: {
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    },
+                    breakpoints: {
+                        320: { slidesPerView: 2 },
+                        576: { slidesPerView: 3 },
+                        992: { slidesPerView: 4 },
+                        1200: { slidesPerView: 5 }
+                    }
+                });
+            });
     /*=============================================
-	=          Data Background      =
-    =============================================*/
+    =          Data Background      =
+    ==============================================*/
     function dataBackground() {
         $('[data-background]').each(function () {
             $(this).css('background-image', 'url(' + $(this).attr('data-background') + ')');
