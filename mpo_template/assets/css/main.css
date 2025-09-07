@@ -12179,5 +12179,12 @@ strong {
     border-radius: 30px 30px 0 0;
     height: 82px;
     align-items: center;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-bottom {
+    display: none;
   }
 }
