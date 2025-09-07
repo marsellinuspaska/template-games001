@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 @import url("https://fonts.googleapis.com");
 @import url("https://fonts.gstatic.com");
@@ -1369,7 +1369,7 @@ textarea {
 .btn-scroll-top {
   position: fixed;
   right: 1.5rem;
-  bottom: 1.5rem;
+  bottom: 12rem;
   width: 3rem;
   height: 3rem;
   cursor: pointer;
@@ -12149,5 +12149,35 @@ strong {
   background-color: #111827;
 }
 
+.nav-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 427px;
+  height: 82px;
+  background: #180835;
+  border-radius: 25px 25px 0 0;
+  box-shadow: 0 -5px 24px rgba(0,0,0,0.12);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 30px;
+}
 
-/*# sourceMappingURL=main.css.map */
+.nav-bottom-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-bottom {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    height: 82px;
+    align-items: center;
+  }
+}
