@@ -34,7 +34,8 @@
   --tc-ds-xs-6: 24px;
   --tc-body-line-height: 1.5;
   --tc-heading-line-height: 1.2;
-  --tc-theme-primary: #e3ff04;
+  --tc-theme-primary:border-radius: 50px;
+  --tc-theme-primary: linear-gradient(90deg, rgba(105, 0, 153, 0.66) 0%, rgba(203, 0, 199, 0.66) 48.56%, rgba(174, 0, 255, 0.66) 100%);
   --tc-theme-b_text: #e9e9e9;
   --tc-theme-b_text2: #565656;
   --tc-system-white: #ffffff;
@@ -710,7 +711,7 @@ button {
 }
 
 .btn.active {
-  color: var(--tc-system-black-1) !important;
+  color: var(--tc-system-white) !important;
 }
 
 a:focus,
@@ -1427,6 +1428,7 @@ textarea {
   --bs-btn-font-weight: 600;
   --bs-btn-line-height: 1;
   --bs-btn-color: var(--bs-body-color);
+  --bs-btn-text: var(--tc-system-white);
   --bs-btn-bg: transparent;
   --bs-btn-border-width: var(--bs-border-width);
   --bs-btn-border-color: transparent;
@@ -1560,7 +1562,7 @@ textarea {
 }
 
 .btn-primary {
-  --bs-btn-color: var(--tc-system-black-1);
+  --bs-btn-color: var(--tc-system-white);
   --bs-btn-bg: var(--tc-theme-primary);
   --bs-btn-border-color: none;
   --bs-btn-hover-color: var(--tc-system-black-1);
@@ -1571,9 +1573,11 @@ textarea {
   --bs-btn-active-bg: var(--tc-theme-primary-dark);
   --bs-btn-active-border-color: var(--tc-theme-primary-dark);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+border-radius: 5rem;
 }
 
 .btn-dark {
+  --bs-btn-text: var(--tc-system-white);
   --bs-btn-color: var(--tc-system-white);
   --bs-btn-bg: var(--tc-system-black-1);
   --bs-btn-border-color: none;
