@@ -69,37 +69,35 @@
   height: auto;
 }
 
-  @media (max-width: 720px) {
-    #games .col-4 {
-      flex: 0 0 auto;
-      width: 33.333%;
-      max-width: 120px;
-    }
-    #games .card-img-top {
-      width: 120px;
-      height: auto;
-    }
+@media (max-width: 720px) {
+  #games .col-4 {
+    flex: 0 0 auto;
+    width: 33.333%;
+    max-width: 120px;
   }
-
-  @media (min-width: 721px) {
-    #games .col-4 {
-      flex: 0 0 auto;
-      width: 33.333%;
-    }
+  #games .card-img-top {
+    width: 120px;
+    height: auto;
   }
-
-  @media (min-width: 992px) {
-    #games .row {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 15px;
-    }
-    #games .col-4 {
-      width: 100% !important;
-      max-width: none;
-      flex: unset;
-    }
+}
+@media (min-width: 721px) {
+  #games .col-4 {
+    flex: 0 0 auto;
+    width: 33.333%;
   }
+}
+@media (min-width: 992px) {
+  #games .row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+  }
+  #games .col-4 {
+    width: 100% !important;
+    max-width: none;
+    flex: unset;
+  }
+}
 
 
 .elementtext {
@@ -445,7 +443,7 @@ img {
 }
 
 .gradient-text {
-  font-size: 3em;
+  font-size: 2rem;
   font-weight: bold;
   background-image: linear-gradient(to right, #E3FF04, #ff63f2b0, #ffffff);
   -webkit-background-clip: text;
@@ -2980,7 +2978,11 @@ Preloader
 }
 
 .section-padding {
-  padding: 100px 0;
+  padding: 50px 0;
+}
+
+.section-margin-bottom {
+  margin-bottom: 10rem;
 }
 
 .py-188 {
